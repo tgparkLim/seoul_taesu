@@ -1,0 +1,54 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manual">
+
+    <ImageView
+        android:id="@+id/img_manu7"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/center7"
+        android:layout_above="@+id/txt_manuinfo1"
+        android:layout_alignParentStart="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_manu7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="경로당"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="180dp"
+                android:textColor="#689f38"/>
+            <TextView
+                android:id="@+id/txt_manuinfo7"
+                android:textSize="15dp"
+                android:textColor="#212121"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="노인들이 동년배의 친구들과 대화를 나누며 새로운 지식을 얻거나 건전한 취미와 오락활동을 할 수 있는 생활의 집으로, 노인정(老人亭)이라고도 한다.
+노인여가시설의 기원은 우리 나라 전통사회에 스며있던, 누각·정자 등에서 찾을 수 있다. 누각은 양반계급이었던 권세자나 선비들의 향연장소였으며, 정자는 주로 서민층이 이용하던 여가활용 장소였다.
+전통사회의 노인여가시설은 급격한 산업화와 사회변화의 과정에서 자취를 감추거나 기능을 상실하고, 광복 이후 새로운 여가시설로서 경로당, 또는 노인정이 생겨났다.
+현재 우리 나라의 경로당은 주민이나 뜻있는 사람들의 힘으로 마련되고, 영리를 목적으로 운영되지 않는 것이 특색이며, 지방자치와 사회복지차원에서 점차 관의 지원도 늘어가고 있는 실정이다."
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/txt_manu7"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

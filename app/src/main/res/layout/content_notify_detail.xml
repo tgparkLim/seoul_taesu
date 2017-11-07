@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_notidetail_category"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="이벤트"
+                android:textColor="#689F38"
+                android:textSize="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_notidetail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="박태순 바보오오오오"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/txt_notidetail_category"
+                android:layout_marginTop="5dp"
+                android:textSize="20dp"/>
+
+
+            <TextView
+                android:id="@+id/txt_notidetail_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20171006"
+                android:textSize="15dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:layout_below="@+id/txt_notidetail_title"/>
+
+            <View
+                android:id="@+id/view_notidetail1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#bdbdbd"
+                android:layout_below="@+id/txt_notidetail_date"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/txt_notidetail_content"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/view_notidetail1"
+                android:layout_marginTop="15dp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:text="aaaaaaaaaaaaaaaa"/>
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

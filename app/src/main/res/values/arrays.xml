@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinnerPlaceArray">
+        <!--<item>[지역 선택]</item>-->
+        <item>강서구</item>
+        <item>강북구</item>
+        <item>노원구</item>
+    </string-array>
+
+</resources>

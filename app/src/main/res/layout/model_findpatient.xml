@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content"
+    android:id="@+id/mCardFindpatient"
+    android:layout_margin="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp">
+
+        <ImageView
+            android:id="@+id/img_fpGrand"
+            android:src="@drawable/grandparents"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_fpTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="타이틀입니다."
+            android:textColor="#292929"
+            android:textSize="17dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/img_fpGrand"/>
+
+        <TextView
+            android:id="@+id/txt_fpNic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="태수니"
+            android:textColor="#292929"
+            android:layout_marginTop="3dp"
+            android:layout_below="@+id/txt_fpTitle"
+            android:layout_alignLeft="@+id/txt_fpTitle"
+            android:textSize="15dp"/>
+
+        <TextView
+            android:id="@+id/txt_fpDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-10-29"
+            android:layout_below="@+id/txt_fpNic"
+            android:layout_alignLeft="@+id/txt_fpNic"
+            android:textSize="10dp"
+            android:textColor="#292929"/>
+
+        <TextView
+            android:id="@+id/txt_fpAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="강남구 서초동"
+            android:layout_below="@+id/txt_fpDate"
+            android:layout_alignLeft="@+id/txt_fpNic"
+            android:textSize="15dp"
+            android:textColor="#292929"/>
+
+        <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:textAppearance="?android:attr/textAppearanceLarge"-->
+            <!--android:text="name"-->
+            <!--android:id="@+id/nameFindcarepatient"-->
+            <!--android:padding="10dp"-->
+            <!--android:layout_alignParentLeft="true"/>-->
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

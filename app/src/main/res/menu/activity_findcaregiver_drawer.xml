@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_main"
+            android:icon="@drawable/house"
+            android:title="홈" />
+        <item
+            android:id="@+id/nav_Find_Caregiver"
+            android:icon="@drawable/find_caregiver"
+            android:title="간병인찾기" />
+        <item
+            android:id="@+id/nav_Find_Patient"
+            android:icon="@drawable/find_patient"
+            android:title="환자찾기" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_Manual"
+                android:icon="@drawable/manual"
+                android:title="시설소개" />
+            <item
+                android:id="@+id/nav_Place"
+                android:icon="@drawable/find_place"
+                android:title="시설찾기" />
+        </menu>
+    </item>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_Notify"
+                android:icon="@drawable/notify"
+                android:title="공지사항" />
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="공유하기" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="메일보내기" />
+        </menu>
+    </item>
+
+</menu>

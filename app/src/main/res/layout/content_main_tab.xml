@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.taesu.seoul2.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <ImageView
+        android:id="@+id/img_grandpa"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="60dp"
+        android:src="@drawable/grandparents"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img_grandpa"
+        android:text="이 지역 추천 시설"
+        android:textColor="#212121"
+        android:textSize="20dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginLeft="20dp"/>
+
+    <View
+        android:id="@+id/view_main1"
+        android:layout_width="match_parent"
+        android:layout_height="7dp"
+        android:background="#f0f0f0"
+        android:layout_below="@+id/img_grandpa"
+        android:layout_marginTop="10dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:layout_below="@id/view_main1">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rvMain">
+            </android.support.v7.widget.RecyclerView>
+        </RelativeLayout>
+    </ScrollView>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/nodataImgMNP"
+        android:visibility="invisible"
+        android:src="@drawable/cloud_computing"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/noserverMNP"
+        android:visibility="invisible"
+        android:src="@drawable/database"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"/>
+
+</RelativeLayout>

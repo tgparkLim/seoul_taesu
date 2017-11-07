@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.taesu.seoul2.FindPatient_detail.FindpatientPost">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/findcaregiver_detail_toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btn_postp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/left_arrow"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/txt_placename2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/saveBtn2"
+                android:textSize="20dp"
+                android:layout_marginLeft="65dp"
+                android:layout_centerInParent="true"
+                android:textColor="#212121"
+                android:text="환자찾기-등록"/>
+
+            <Button
+                android:id="@+id/saveBtn2"
+                android:layout_width="65dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="60dp"
+                android:background="@drawable/btn_submit"
+                android:layout_toRightOf="@+id/txt_placename2"/>
+        </RelativeLayout>
+    </android.support.v7.widget.Toolbar>
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#689f38"
+        android:layout_below="@+id/findcaregiver_detail_toolBar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/dot1"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/dot"/>
+                <TextView
+                    android:id="@+id/tv_title2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="제목"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/dot1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignBaseline="@id/dot1"
+                    android:textColor="#212121"/>
+                <EditText
+                    android:id="@+id/Edit_fcpost_title2"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/tv_title2"
+                    android:hint="제목을 25자내로 입력해주세요."/>
+
+                <ImageView
+                    android:id="@+id/dot2"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:src="@drawable/dot"
+                    android:layout_marginTop="5dp"
+                    android:layout_below="@id/Edit_fcpost_title2"/>
+                <TextView
+                    android:id="@+id/tv_nic2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="작성자"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/dot2"
+                    android:layout_marginLeft="15dp"
+                    android:layout_below="@+id/Edit_fcpost_title2"
+                    android:textColor="#212121"/>
+                <EditText
+                    android:id="@+id/Edit_fcpost_nic2"
+                    android:layout_width="350dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/tv_nic2"
+                    android:hint="이름 혹은 닉네임을 입력해주세요."/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f0f0f0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/dot3"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/dot"/>
+                <TextView
+                    android:id="@+id/tv_careinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="간병인정보"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/dot3"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignBaseline="@id/dot3"
+                    android:textColor="#212121"/>
+
+                <TextView
+                    android:id="@+id/txt_postgender2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_careinfo"
+                    android:text="성별"
+                    android:textColor="#212121"
+                    android:layout_marginTop="10dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_postgender2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@+id/txt_postgender2"
+                    android:layout_below="@id/tv_careinfo"
+                    android:layout_marginLeft="15dp">
+
+                    <RadioButton
+                        android:buttonTint="#8bc34a"
+                        android:id="@+id/radio_postgenFm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여성"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_postgenM2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남성" />
+
+                </RadioGroup>
+
+                <TextView
+                    android:id="@+id/txt_postage2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_postgender2"
+                    android:text="나이"
+                    android:textColor="#212121"
+                    android:layout_marginTop="25dp"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_age2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/rg_postgender2"
+                    android:layout_toRightOf="@id/txt_postage2"
+                    android:layout_marginLeft="20dp"
+                    android:hint="나이를 입력해주세요."/>
+
+                <TextView
+                    android:id="@+id/txt_postphone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_postage2"
+                    android:text="연락처"
+                    android:textColor="#212121"
+                    android:layout_marginTop="25dp"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_phone2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/Edit_fcpost_age2"
+                    android:layout_toRightOf="@id/txt_postphone2"
+                    android:layout_marginLeft="20dp"
+                    android:hint="연락처를 입력해주세요(예:010-7777-7777)"/>
+
+                <TextView
+                    android:id="@+id/txt_postcertify2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_postphone2"
+                    android:text="자격증"
+                    android:textColor="#212121"
+                    android:layout_marginTop="30dp"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_certify2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/Edit_fcpost_phone2"
+                    android:layout_toRightOf="@id/txt_postcertify2"
+                    android:layout_marginLeft="20dp"
+                    android:hint="자격증이있으면 입력해주세요."/>
+
+                <TextView
+                    android:id="@+id/txt_postjob2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_postcertify2"
+                    android:text="직업"
+                    android:textColor="#212121"
+                    android:layout_marginTop="40dp"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_job2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/Edit_fcpost_certify2"
+                    android:layout_toRightOf="@id/txt_postjob2"
+                    android:layout_marginLeft="20dp"/>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f0f0f0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/dot4"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/dot"/>
+                <TextView
+                    android:id="@+id/tv_locinfo2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="원하는 근무조건"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/dot4"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignBaseline="@id/dot4"
+                    android:textColor="#212121"/>
+
+                <TextView
+                    android:id="@+id/txt_postaddress2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_locinfo2"
+                    android:text="위치"
+                    android:textColor="#212121"
+                    android:layout_marginTop="10dp"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_address2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/tv_locinfo2"
+                    android:layout_toRightOf="@id/txt_postaddress2"
+                    android:layout_marginLeft="20dp"
+                    android:hint="주소를 구를 입력해주세요."/>
+
+                <TextView
+                    android:id="@+id/txt_postcost2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_postaddress2"
+                    android:text="급여"
+                    android:textColor="#212121"
+                    android:layout_marginTop="35dp"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_cost2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:hint="희망 급여를 입력해주세요."
+                    android:layout_below="@+id/Edit_fcpost_address2"
+                    android:layout_alignParentEnd="true" />
+
+                <TextView
+                    android:id="@+id/txt_postterm2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_postcost2"
+                    android:text="근무기간"
+                    android:textColor="#212121"
+                    android:layout_marginTop="25dp"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_term2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/Edit_fcpost_cost2"
+                    android:layout_toRightOf="@id/txt_postterm2"
+                    android:layout_marginLeft="20dp"
+                    android:hint="원하는 근무기간 입력(예:한달, 없으면 빈칸)"/>
+
+                <TextView
+                    android:id="@+id/txt_posthopegender2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_postterm2"
+                    android:text="원하는 환자 성별"
+                    android:textColor="#212121"
+                    android:layout_marginTop="40dp"/>
+
+                <RadioGroup
+                    android:id="@+id/rg_posthopegender2"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_toRightOf="@+id/txt_posthopegender2"
+                    android:layout_below="@id/Edit_fcpost_term2"
+                    android:layout_marginLeft="15dp">
+
+                    <RadioButton
+                        android:buttonTint="#8bc34a"
+                        android:id="@+id/radio_posthopeFm2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="여성"
+                        android:checked="true"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_posthopeM2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="남성" />
+
+                </RadioGroup>
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view4"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f0f0f0" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp">
+
+                <ImageView
+                    android:id="@+id/dot5"
+                    android:layout_width="10dp"
+                    android:layout_height="10dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/dot"/>
+                <TextView
+                    android:id="@+id/tv_detail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세내용"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/dot5"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignBaseline="@id/dot5"
+                    android:textColor="#212121"/>
+
+                <EditText
+                    android:id="@+id/Edit_fcpost_content2"
+                    android:layout_width="300dp"
+                    android:layout_height="50dp"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/tv_detail2"
+                    android:layout_marginLeft="20dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view5"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#f0f0f0" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
+

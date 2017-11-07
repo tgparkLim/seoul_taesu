@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manual">
+
+    <ImageView
+        android:id="@+id/img_manu5"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/center5"
+        android:layout_above="@+id/txt_manuinfo1"
+        android:layout_alignParentStart="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_manu5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="노인재가복지시설"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="180dp"
+                android:textColor="#689f38"/>
+            <TextView
+                android:id="@+id/txt_manuinfo5"
+                android:textSize="15dp"
+                android:textColor="#212121"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="1. 재가노인복지시설의 종류(현재 시행중)
+재가노인복지시설은 노인들이 자신이 살고 있는 지역에 거주하면서 필요한 서비스를 제공받을 수 있도록 하는 시설로서 3종류로 구분된다.(노인복지법 제38조)여기에는 가정봉사원 파견시설, 주간보호시설과 단기보호시설이 해당된다.
+
+가정봉사원 파견시설은 신체적·정신적 장애로 일상생활을 영위하기 곤란한 노인이 있는 가정에 가정봉사원을 파견하여 노인의 일상생활에 필요한 각종 편의를 제공함으로써 지역사회 안에서 건전하고 안정된 노후생활을 영위하도록 하는 시설이다.
+
+주간보호시설은 부득이한 사유로 가족의 보호를 받을 수 없는 심신이 허약한 노인과 장애노인을 낮 동안 시설에 입소시켜 필요한 각종 편의를 제공하여 이들의 생활안정과 심신기능의 유지·향상을 도모하고, 나아가 그 가족의 신체적·정신적 부담을 덜어주기 위한 시설이다.
+단기보호시설은 부득이한 사유로 가족의 보호를 받을 수 없어 일시적으로 보호가 필요한 심신이 허약한 노인과 장애노인을 시설에 단기간 입소시켜 보호함으로써 노인 및 노인가정의 복지증진을 도모하기 위한 시설이다.
+주간보호시설과 단기보호시설이 가정봉사원 파견시설의 목적과 다른 점은 가족부양의 부담경감이라는 측면이 강조되고 있다는 점이다. 심신이 허약하거나 장애가 있는 자로서 단기간의 보호가 필요한 자를 이용대상으로 하고 있다.
+
+국가 또는 지방자치단체는 재가노인복지시설을 설치할 수 있으며, 국가 또는 지방자치단체외의 자가 재가노인복지시설을 설치하고자 하는 경우에는 시장·군수·구청장에게 신고해야 한다.
+
+재가노인복지시설의 이용은 당사자 간의 계약에 의해 이루어지며,이용대상자는 60세 이상이어야 한다. 다만, 국가 또는 지방정부로부터 보조를 받는 재가복지시설의 이용자는 국민기초생활수급 노인이거나 생활보장대상 노인이 아닌 65세 이상의 자 중 부양의무자로부터 부양을 받지 못하는 자 및 실비보호 대상자로서 65세 이상인 자에 한정된다. "
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/txt_manu5"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

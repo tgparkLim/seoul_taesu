@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manual">
+
+    <!-- TODO: Update blank fragment layout -->
+    <!--<TextView-->
+        <!--android:gravity="top"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="노인 종합 복지관" />-->
+
+        <ImageView
+            android:id="@+id/img_manu1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/center1"/>
+
+        <TextView
+            android:id="@+id/txt_manu1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="노인종합복지관"
+            android:textSize="40dp"
+            android:textStyle="bold"
+            android:layout_marginTop="180dp"
+            android:textColor="#689f38"/>
+        <TextView
+            android:id="@+id/txt_manuinfo1"
+            android:layout_margin="20dp"
+            android:textSize="15dp"
+            android:textColor="#212121"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/img_manu1"
+            android:text="어르신들의 교양,취미생활 및 사회참여활동 등에 대한 각종 정보와 서비스를 제공하고건강증진 및 질병예방과 소득보장,재가복지등 그 밖에 노인의 복지증진에 필요한 종합적인 노인복지서비스를 제공하는 시설" />
+
+</RelativeLayout>

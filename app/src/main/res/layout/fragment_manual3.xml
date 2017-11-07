@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manual">
+
+    <ImageView
+        android:id="@+id/img_manu4"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/center4"
+        android:layout_above="@+id/txt_manuinfo1"
+        android:layout_alignParentStart="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_manu4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="데이케어센터"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="180dp"
+                android:textColor="#689f38"/>
+            <TextView
+                android:id="@+id/txt_manuinfo4"
+                android:textSize="15dp"
+                android:textColor="#212121"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="어르신을 하루 중 일정한 시간 동안 장기요양기관에 보호하여 신체활동 지원 및 심신기능의 유지, 향상을 위한 교육, 훈련 등을 제공하는 장기요양서비스
+낮시간동안 센터에서 생활하며 다양한 프로그램에 참여하기도 하고, 체계적인 건강 관리를 받으며, 다른 어르신들과 소통하고 함께 어울릴 수 있는 공간이다."
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/txt_manu4"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

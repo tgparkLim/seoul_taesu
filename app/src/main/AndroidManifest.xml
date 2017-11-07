@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.taesu.seoul2">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--전화,메시지 퍼미션-->
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.DIAL_PHONE" />
+
+    <!-- when fetch image too slow -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/grandparents"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCVd7OVvYaJbdhB9QT48_hcNZloUSJuIYQ" />
+
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.kakao.sdk.AppKey"
+            android:value="@string/kakao_app_key" />
+
+        <activity
+            android:name=".Place"
+            android:label="시설찾기"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Place_detail.Tab1_rv_detail" />
+        <activity android:name=".Place_detail.Tab2_rv_detail" />
+        <activity android:name=".Place_detail.Tab3_rv_detail" />
+        <activity android:name=".MainActivity_detail.MainNearPlace_rv_detail" />
+        <activity
+            android:name=".FindCaregiver"
+            android:label="간병인찾기"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FindCaregiver_detail.FindCaregiver_rv_detail" />
+        <!-- <activity android:name=".StartActivity" /> -->
+        <activity
+            android:name=".Notify"
+            android:label="공지사항"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FindCaregiver_detail.FindCaregiverPost" />
+        <activity android:name=".Login.RegisterActivity" />
+        <activity android:name=".Login.LoginActivity" />
+        <activity
+            android:name=".Splash"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data
+                    android:host="@string/kakaolink_host"
+                    android:scheme="@string/kakao_scheme" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Notify_detail.Notify_rv_detail" />
+        <activity
+            android:name=".FindPatient"
+            android:label="환자찾기"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FindPatient_detail.Findpatient_detail" />
+        <activity
+            android:name=".Manual"
+            android:label="시설소개"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".FindPatient_detail.FindpatientPost"></activity>
+
+        <activity android:name=".MainActivity_detail.MainNearPlaceGoogleMap"></activity><!-- ATTENTION: This was auto-generated to add Google Play services to your project for
+     App Indexing.  See https://g.co/AppIndexing/AndroidStudio for more information. -->
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+    </application>
+
+</manifest>

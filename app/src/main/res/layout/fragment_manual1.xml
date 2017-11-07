@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manual">
+
+    <ImageView
+        android:id="@+id/img_manu2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/center2"
+        android:layout_marginBottom="308dp"
+        android:layout_alignBottom="@+id/txt_manuinfo1"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/txt_manu1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="노인주거복지시설"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        android:layout_marginTop="180dp"
+        android:textColor="#689f38"/>
+    <TextView
+        android:id="@+id/txt_manuinfo1"
+        android:textSize="15dp"
+        android:textColor="#212121"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="“노인주거복지시설”은 65세 또는 60세 이상의 일상생활에 지장이 없는 노인이 가정과 같은 주거공간에서 일상생활에 필요한 편의를 제공받을 수 있는 시설을 말합니다."
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@+id/txt_manu1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp" />
+
+
+</RelativeLayout>

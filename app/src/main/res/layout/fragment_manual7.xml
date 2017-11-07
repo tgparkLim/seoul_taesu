@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Manual">
+
+    <ImageView
+        android:id="@+id/img_manu8"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:src="@drawable/center8"
+        android:layout_above="@+id/txt_manuinfo1"
+        android:layout_alignParentStart="true" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/txt_manu8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="노인보호전문기관"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_marginTop="180dp"
+                android:textColor="#689f38"/>
+            <TextView
+                android:id="@+id/txt_manuinfo8"
+                android:textSize="15dp"
+                android:textColor="#212121"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="노인복지시설 중 하나로, 노인학대에 관한 업무를 담당하는 국가 및 지방자치단체의 기관을 말한다. 국가 및 지방자치단체는 노인학대에 관한 다음의 업무를 담당하는 노인보호전문기관을 설치하여야 한다. 다만, 다른 노인복지시설을 노인보호전문기관으로 지정한 경우에는 해당되지 않는다. ①노인학대의 예방 및 방지를 위한 홍보, ②학대받은 노인의 발견·상담·보호와 의료기관에 치료의뢰 및 노인복지시설에 입소의뢰, ③노인학대행위자, 노인학대행위자로 신고된 자 및 그 가정 또는 업무·고용 등의 관계로 사실상 노인을 보호·감독하는 기관이나 시설 등에 대한 조사, ④노인학대행위자에 대한 상담 및 교육, ⑤그 밖에 학대받은 노인의 보호를 위하여 필요한 사항. 근거법은 노인복지법이다."
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_below="@+id/txt_manu8"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="36dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

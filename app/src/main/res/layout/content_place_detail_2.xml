@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/placedetail_scroll2"
+        android:layout_marginTop="0dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <fragment android:tag="fragment_map"
+                android:id="@+id/fragment_place_map2"
+                class="com.google.android.gms.maps.MapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"/>
+
+            <View
+                android:id="@+id/view_placedetail2_1"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#f0f0f0"
+                android:layout_below="@+id/fragment_place_map2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_placename2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/placename"/>
+                <TextView
+                    android:id="@+id/txt_tab2placename"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="aaa"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/img_placename2"
+                    android:layout_alignBottom="@id/img_placename2"/>
+
+                <ImageView
+                    android:id="@+id/img_placecategory2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@+id/img_placename2"
+                    android:src="@drawable/placecategory" />
+
+                <TextView
+                    android:id="@+id/txt_tab2placecategory"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="종류"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/img_placecategory2"
+                    android:layout_alignBottom="@id/img_placecategory2"/>
+
+                <ImageView
+                    android:id="@+id/img_placeadd2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/placeholder"
+                    android:layout_below="@id/img_placecategory2"/>
+                <TextView
+                    android:id="@+id/txt_placeadd2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="bbb"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@id/img_placeadd2"
+                    android:layout_alignBottom="@id/img_placeadd2"/>
+
+                <ImageView
+                    android:id="@+id/img_placephone2"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:src="@drawable/phone"
+                    android:layout_below="@id/img_placeadd2"/>
+                <TextView
+                    android:id="@+id/txt_placephone2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="bbb"
+                    android:textSize="20dp"
+                    android:textColor="#8BC34A"
+                    android:layout_toRightOf="@id/img_placephone2"
+                    android:layout_alignBottom="@id/img_placephone2"/>
+
+                <View
+                    android:id="@+id/view_placedetail2_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/txt_placephone2" />
+
+                <!--<TextView-->
+                    <!--android:id="@+id/txt_latlng"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:text="위도경도" />-->
+
+                <TextView
+                    android:id="@+id/txt_detail2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="상세내용"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/view_placedetail2_2"
+                    android:textColor="#212121"/>
+
+                <TextView
+                    android:id="@+id/txt_detail2link"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="홈페이지 주소 : "
+                    android:layout_below="@+id/txt_detail2"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="15dp"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/txt_placelink2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_detail2link"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="18dp"
+                    android:autoLink="web"
+                    android:text="http://hhheeee.fasslfjflajflaj"/>
+
+                <TextView
+                    android:id="@+id/txt_detail2size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="규모 : "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/txt_placelink2"/>
+
+                <TextView
+                    android:id="@+id/txt_placesize2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200명"
+                    android:layout_alignBottom="@id/txt_detail2size"
+                    android:layout_toRightOf="@+id/txt_detail2size" />
+
+                <TextView
+                    android:id="@+id/txt_detail2people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="인원 : "
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_below="@+id/txt_placesize2"/>
+
+                <TextView
+                    android:id="@+id/txt_placepeople2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="200명"
+                    android:layout_alignBottom="@id/txt_detail2people"
+                    android:layout_toRightOf="@+id/txt_detail2people" />
+
+                <View
+                    android:id="@+id/view_placedetail2_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"
+                    android:background="#f0f0f0"
+                    android:layout_marginTop="20dp"
+                    android:layout_below="@+id/txt_placepeople2" />
+
+                <!--<ImageView-->
+                <!--android:id="@+id/img_placeview1_1"-->
+                <!--android:layout_width="120dp"-->
+                <!--android:layout_height="120dp"-->
+                <!--android:layout_below="@+id/view_placedetail1_3"-->
+                <!--android:src="@drawable/placeimage1" />뷰페이져 태수니가-->
+                <android.support.v4.view.ViewPager
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp"
+                    android:id="@+id/viewPagerPlace2"
+                    android:layout_marginBottom="8dp"
+                    android:layout_below="@id/view_placedetail2_3">
+                </android.support.v4.view.ViewPager>
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</RelativeLayout>
