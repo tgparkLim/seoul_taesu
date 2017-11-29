@@ -26,15 +26,13 @@ public class Tab2Fragment extends Fragment {
 
     Button detailBtn;
 
-    RecyclerView rv;
+    RecyclerView rv2;
     ImageView noDataImg, noNetworkImg;
     String urlAddress = "http://13.124.11.28/taesu/searcher_place2.php";
 
     TextView textView;
 
     SearchView sv;
-
-
 
     @Nullable
     @Override
@@ -47,7 +45,7 @@ public class Tab2Fragment extends Fragment {
 
         //detailBtn = (Button) view.findViewById(R.id.Place1Detail);
 
-        rv = (RecyclerView) view.findViewById(R.id.rvPlace2);
+        rv2 = (RecyclerView) view.findViewById(R.id.rvPlace2);
 //        rv.setLayoutManager(new LinearLayoutManager(getContext()));
 //        rv.setItemAnimator(new DefaultItemAnimator());
 
@@ -58,7 +56,7 @@ public class Tab2Fragment extends Fragment {
 
         String blank ="";
 
-        SenderReceiverPlace2 srp = new SenderReceiverPlace2(getContext(), blank, urlAddress, rv, noDataImg, noNetworkImg);
+        SenderReceiverPlace2 srp = new SenderReceiverPlace2(getContext(), blank, urlAddress, rv2, noDataImg, noNetworkImg);
         srp.execute();
 
         sv = (SearchView) view.findViewById(R.id.sv2);
@@ -66,7 +64,7 @@ public class Tab2Fragment extends Fragment {
             @Override
             public boolean onQueryTextSubmit(String query) {
 
-                SenderReceiverPlace2 sr = new SenderReceiverPlace2(getContext(), query, urlAddress, rv, noDataImg, noNetworkImg);
+                SenderReceiverPlace2 sr = new SenderReceiverPlace2(getContext(), query, urlAddress, rv2, noDataImg, noNetworkImg);
                 sr.execute();
 
                 return false;
@@ -75,15 +73,15 @@ public class Tab2Fragment extends Fragment {
             @Override
             public boolean onQueryTextChange(String query) {
 
-                SenderReceiverPlace2 sr = new SenderReceiverPlace2(getContext(), query, urlAddress, rv, noDataImg, noNetworkImg);
+                SenderReceiverPlace2 sr = new SenderReceiverPlace2(getContext(), query, urlAddress, rv2, noDataImg, noNetworkImg);
                 sr.execute();
 
                 return false;
             }
         });
 
-        rv.setLayoutManager(new LinearLayoutManager(getContext()));
-        rv.setItemAnimator(new DefaultItemAnimator());
+        rv2.setLayoutManager(new LinearLayoutManager(getContext()));
+        rv2.setItemAnimator(new DefaultItemAnimator());
 
 
         return view;
