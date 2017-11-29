@@ -35,7 +35,7 @@ public class Tab2_rv_detail extends AppCompatActivity implements OnMapReadyCallb
     private TextView nameTxt2,categoryTxt2,phoneTxt2,addressTxt2,linkTxt2,sizeTxt2,peopleTxt2;
     ImageView placeimage1_1,placeimage1_2, placeimage1_3;
 
-    public static String image12, image22, image32;
+    public static String image21, image22, image23;
 
     //fetch image from server
     ViewPager viewPager;
@@ -74,9 +74,9 @@ public class Tab2_rv_detail extends AppCompatActivity implements OnMapReadyCallb
         String people2 = i.getExtras().getString("PEOPLE_KEY");
         String category2 = i.getExtras().getString("CATEGORY_KEY");
 
-        image12 = i.getExtras().getString("IMAGE1_KEY");
+        image21 = i.getExtras().getString("IMAGE1_KEY");
         image22 = i.getExtras().getString("IMAGE2_KEY");
-        image32 = i.getExtras().getString("IMAGE3_KEY");
+        image23 = i.getExtras().getString("IMAGE3_KEY");
         //BIND
         nameTxt2.setText(name2);
         phoneTxt2.setText(Html.fromHtml("<u>"+phone2+"</u>"));
