@@ -9,7 +9,7 @@ import java.io.Serializable;
 public class Place3_model implements Serializable {
 
     int id3;
-    private String name3, category3, phone3, address3, link3, size3, people3, placeimage1, placeimage2, placeimage3;
+    private String name3, category3, phone3, address3, link3, size3, people3, placeimage31, placeimage32, placeimage33;
 
     private static final long seriaVersionUID3 = 1L;
 
@@ -17,6 +17,30 @@ public class Place3_model implements Serializable {
 
     public Place3_model() {
 
+    }
+
+    public String getPlaceimage31() {
+        return placeimage31;
+    }
+
+    public void setPlaceimage31(String placeimage31) {
+        this.placeimage31 = placeimage31;
+    }
+
+    public String getPlaceimage32() {
+        return placeimage32;
+    }
+
+    public void setPlaceimage32(String placeimage32) {
+        this.placeimage32 = placeimage32;
+    }
+
+    public String getPlaceimage33() {
+        return placeimage33;
+    }
+
+    public void setPlaceimage33(String placeimage33) {
+        this.placeimage33 = placeimage33;
     }
 
     public int getId3() {
