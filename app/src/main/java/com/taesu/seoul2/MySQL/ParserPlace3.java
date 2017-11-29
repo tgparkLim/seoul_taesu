@@ -78,9 +78,9 @@ public class ParserPlace3 extends AsyncTask<Void, Void, Integer> {
                 String link=jo.getString("link");
                 String size=jo.getString("size");
                 String people=jo.getString("people");
-//                String image1 = jo.getString("image1");
-//                String image2 = jo.getString("image2");
-//                String image3 = jo.getString("image3");
+                String image1 = jo.getString("image1");
+                String image2 = jo.getString("image2");
+                String image3 = jo.getString("image3");
 
                 place3_model = new Place3_model();
 
@@ -92,9 +92,9 @@ public class ParserPlace3 extends AsyncTask<Void, Void, Integer> {
                 place3_model.setLink3(link);
                 place3_model.setSize3(size);
                 place3_model.setPeople3(people);
-//                place1_model.setPlaceimage1(image1);
-//                place1_model.setPlaceimage2(image2);
-//                place1_model.setPlaceimage3(image3);
+                place3_model.setPlaceimage31(image1);
+                place3_model.setPlaceimage32(image2);
+                place3_model.setPlaceimage33(image3);
 
                 addresses3.add(place3_model);
 
