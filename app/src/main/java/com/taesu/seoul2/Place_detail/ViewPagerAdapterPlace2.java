@@ -12,9 +12,9 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.taesu.seoul2.R;
 
-import static com.taesu.seoul2.Place_detail.Tab2_rv_detail.image12;
+import static com.taesu.seoul2.Place_detail.Tab2_rv_detail.image21;
 import static com.taesu.seoul2.Place_detail.Tab2_rv_detail.image22;
-import static com.taesu.seoul2.Place_detail.Tab2_rv_detail.image32;
+import static com.taesu.seoul2.Place_detail.Tab2_rv_detail.image23;
 
 /**
  * Created by park on 2017-10-31.
@@ -25,9 +25,9 @@ public class ViewPagerAdapterPlace2 extends PagerAdapter {
     private Context context;
     private LayoutInflater layoutInflater;
     private String [] image = {
-            image12,
+            image21,
             image22,
-            image32};
+            image23};
 
     public ViewPagerAdapterPlace2(Context context) {
         this.context = context;
