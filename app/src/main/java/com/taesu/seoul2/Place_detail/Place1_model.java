@@ -12,15 +12,24 @@ public class Place1_model implements Serializable {
     private String name1,category1, phone1, address1, link1
             , size1, people1, placeimage1, placeimage2, placeimage3;
 
+    private String rvImage1;
+
     private static final long seriaVersionUID = 1L;
 
     private boolean isSelected;
 
+
+    public String getRvImage1() {
+        return rvImage1;
+    }
+
+    public void setRvImage1(String rvImage1) {
+        this.rvImage1 = rvImage1;
+    }
+
     public Place1_model() {
 
     }
-
-
 
     public int getId1() {
         return id1;
