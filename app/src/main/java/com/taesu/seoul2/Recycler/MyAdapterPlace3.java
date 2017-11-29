@@ -10,6 +10,7 @@ import android.view.ViewGroup;
 import com.taesu.seoul2.Place_detail.ItemClickListener;
 import com.taesu.seoul2.Place_detail.Place3_model;
 import com.taesu.seoul2.Place_detail.Tab2_rv_detail;
+import com.taesu.seoul2.Place_detail.Tab3_rv_detail;
 import com.taesu.seoul2.R;
 
 import java.util.ArrayList;
@@ -52,7 +53,9 @@ public class MyAdapterPlace3 extends RecyclerView.Adapter<MyHolderPlace3> {
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick() {
-                openDetailActivity(p.getName3(),p.getCategory3(),p.getPhone3(),p.getAddress3(),p.getLink3(),p.getSize3(),p.getPeople3());
+                openDetailActivity(p.getName3(),p.getCategory3(),p.getPhone3()
+                        ,p.getAddress3(),p.getLink3(),p.getSize3(),p.getPeople3()
+                        ,p.getPlaceimage31(),p.getPlaceimage32(),p.getPlaceimage33());
             }
         });
 
@@ -63,9 +66,10 @@ public class MyAdapterPlace3 extends RecyclerView.Adapter<MyHolderPlace3> {
         return names.size();
     }
 
-    private void openDetailActivity(String name, String category, String phone, String address, String link, String size, String people) {
+    private void openDetailActivity(String name, String category, String phone, String address
+            , String link, String size, String people, String image1, String image2, String image3) {
 
-        Intent i = new Intent(c, Tab2_rv_detail.class);
+        Intent i = new Intent(c, Tab3_rv_detail.class);
 
         //PACK DATA
         i.putExtra("NAME_KEY",name);
@@ -75,9 +79,9 @@ public class MyAdapterPlace3 extends RecyclerView.Adapter<MyHolderPlace3> {
         i.putExtra("LINK_KEY",link);
         i.putExtra("SIZE_KEY",size);
         i.putExtra("PEOPLE_KEY", people);
-//        i.putExtra("IMAGE1_KEY", image1);
-//        i.putExtra("IMAGE2_KEY", image2);
-//        i.putExtra("IMAGE3_KEY", image3);
+        i.putExtra("IMAGE1_KEY", image1);
+        i.putExtra("IMAGE2_KEY", image2);
+        i.putExtra("IMAGE3_KEY", image3);
 
         c.startActivity(i);
 
