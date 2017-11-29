@@ -80,6 +80,8 @@ public class ParserPlace extends AsyncTask<Void, Void, Integer> {
                 String image2 = jo.getString("image2");
                 String image3 = jo.getString("image3");
 
+                String rvImage = jo.getString("rvImage");
+
                 place1_model = new Place1_model();
 
                 place1_model.setId1(id);
@@ -93,6 +95,7 @@ public class ParserPlace extends AsyncTask<Void, Void, Integer> {
                 place1_model.setPlaceimage1(image1);
                 place1_model.setPlaceimage2(image2);
                 place1_model.setPlaceimage3(image3);
+                place1_model.setRvImage1(rvImage);
 
                 addresses.add(place1_model);
 
