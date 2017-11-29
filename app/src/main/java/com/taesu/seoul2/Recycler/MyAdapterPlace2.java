@@ -53,7 +53,9 @@ public class MyAdapterPlace2 extends RecyclerView.Adapter<MyHolderPlace2> {
         holder.setItemClickListener(new ItemClickListener() {
             @Override
             public void onItemClick() {
-                openDetailActivity(p.getName2(),p.getCategory2(),p.getPhone2(),p.getAddress2(),p.getLink2(),p.getSize2(),p.getPeople2());
+                openDetailActivity(p.getName2(),p.getCategory2(),p.getPhone2()
+                        ,p.getAddress2(),p.getLink2(),p.getSize2(),p.getPeople2()
+                        ,p.getPlaceimage21(),p.getPlaceimage22(),p.getPlaceimage23());
             }
         });
 
@@ -64,7 +66,8 @@ public class MyAdapterPlace2 extends RecyclerView.Adapter<MyHolderPlace2> {
         return names.size();
     }
 
-    private void openDetailActivity(String name, String category, String phone, String address, String link, String size, String people) {
+    private void openDetailActivity(String name, String category, String phone, String address, String link
+            , String size, String people, String image1, String image2, String image3) {
 
         Intent i = new Intent(c, Tab2_rv_detail.class);
 
@@ -76,9 +79,9 @@ public class MyAdapterPlace2 extends RecyclerView.Adapter<MyHolderPlace2> {
         i.putExtra("LINK_KEY",link);
         i.putExtra("SIZE_KEY",size);
         i.putExtra("PEOPLE_KEY", people);
-//        i.putExtra("IMAGE1_KEY", image1);
-//        i.putExtra("IMAGE2_KEY", image2);
-//        i.putExtra("IMAGE3_KEY", image3);
+        i.putExtra("IMAGE1_KEY", image1);
+        i.putExtra("IMAGE2_KEY", image2);
+        i.putExtra("IMAGE3_KEY", image3);
 
         c.startActivity(i);
 
