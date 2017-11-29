@@ -12,8 +12,8 @@ import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.taesu.seoul2.R;
 
-import static com.taesu.seoul2.Place_detail.Tab3_rv_detail.image13;
-import static com.taesu.seoul2.Place_detail.Tab3_rv_detail.image23;
+import static com.taesu.seoul2.Place_detail.Tab3_rv_detail.image31;
+import static com.taesu.seoul2.Place_detail.Tab3_rv_detail.image32;
 import static com.taesu.seoul2.Place_detail.Tab3_rv_detail.image33;
 
 /**
@@ -25,8 +25,8 @@ public class ViewPagerAdapterPlace3 extends PagerAdapter {
     private Context context;
     private LayoutInflater layoutInflater;
     private String [] image = {
-            image13,
-            image23,
+            image31,
+            image32,
             image33};
 
     public ViewPagerAdapterPlace3(Context context) {
