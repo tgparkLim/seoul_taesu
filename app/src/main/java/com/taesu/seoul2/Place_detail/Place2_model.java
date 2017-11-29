@@ -9,7 +9,8 @@ import java.io.Serializable;
 public class Place2_model implements Serializable{
 
     int id2;
-    private String name2,category2, phone2, address2, link2, size2, people2, placeimage1, placeimage2, placeimage3;
+    private String name2,category2, phone2, address2, link2
+            , size2, people2, placeimage21, placeimage22, placeimage23;
 
     private static final long seriaVersionUID2 = 1L;
 
@@ -89,5 +90,29 @@ public class Place2_model implements Serializable{
 
     public void setSelected2(boolean selected2) {
         isSelected2 = selected2;
+    }
+
+    public String getPlaceimage21() {
+        return placeimage21;
+    }
+
+    public void setPlaceimage21(String placeimage21) {
+        this.placeimage21 = placeimage21;
+    }
+
+    public String getPlaceimage22() {
+        return placeimage22;
+    }
+
+    public void setPlaceimage22(String placeimage22) {
+        this.placeimage22 = placeimage22;
+    }
+
+    public String getPlaceimage23() {
+        return placeimage23;
+    }
+
+    public void setPlaceimage23(String placeimage23) {
+        this.placeimage23 = placeimage23;
     }
 }
