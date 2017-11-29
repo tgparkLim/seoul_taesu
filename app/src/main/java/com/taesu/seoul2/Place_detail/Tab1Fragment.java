@@ -36,8 +36,6 @@ public class Tab1Fragment extends Fragment {
 
     SearchView sv;
 
-
-
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container,
